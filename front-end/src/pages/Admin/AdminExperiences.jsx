@@ -18,12 +18,12 @@ function AdminExperiences() {
       dispatch(ShowLoading());
       let response;
       if (selectedItemForEdit) {
-        response = await axios.post("http://localhost:3000/api/portfolio/update-experience", {
+        response = await axios.post("https://capstone-0wh7.onrender.com/api/portfolio/update-experience", {
           ...values,
           _id: selectedItemForEdit._id,
         });
       } else {
-        response = await axios.post("http://localhost:3000/api/portfolio/add-experience", values);
+        response = await axios.post("https://capstone-0wh7.onrender.com/api/portfolio/add-experience", values);
       }
 
       dispatch(HideLoading());
@@ -46,7 +46,7 @@ function AdminExperiences() {
   const onDelete = async (item) => {
     try {
       dispatch(ShowLoading());
-      const response = await axios.post("http://localhost:3000/api/portfolio/delete-experience", {
+      const response = await axios.post("https://capstone-0wh7.onrender.com/api/portfolio/delete-experience", {
         _id: item._id,
       });
       dispatch(HideLoading());

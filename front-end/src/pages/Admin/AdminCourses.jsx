@@ -18,7 +18,7 @@ function AdminExperiences() {
       dispatch(ShowLoading());
       let response;
       if (selectedItemForEdit) {
-        response = await axios.post("http://localhost:3000/api/portfolio/update-course", {
+        response = await axios.post("https://capstone-0wh7.onrender.com/api/portfolio/update-course", {
           ...values,
           _id: selectedItemForEdit._id,
         });

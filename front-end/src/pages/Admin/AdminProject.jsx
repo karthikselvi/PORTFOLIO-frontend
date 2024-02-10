@@ -21,12 +21,12 @@ function AdminProjects() {
             dispatch(ShowLoading());
             let response;
             if (selectedItemForEdit) {
-                response = await axios.post("http://localhost:3000/api/portfolio/update-project", {
+                response = await axios.post("https://capstone-0wh7.onrender.com/api/portfolio/update-project", {
                     values,
                     _id: selectedItemForEdit._id,
                 });
             } else {
-                response = await axios.post("http://localhost:3000/api/portfolio/add-project",
+                response = await axios.post("https://capstone-0wh7.onrender.com/api/portfolio/add-project",
                     values);
             }
             dispatch(HideLoading());
@@ -47,7 +47,7 @@ function AdminProjects() {
     const onDelete = async (item) => {
         try {
             dispatch(ShowLoading());
-            const response = await axios.post("http://localhost:3000/api/portfolio/delete-project", {
+            const response = await axios.post("https://capstone-0wh7.onrender.com/api/portfolio/delete-project", {
                 _id: item._id,
             });
             dispatch(HideLoading());

@@ -16,7 +16,7 @@ function App() {
   const getPortfolioData = async () => {
     try {
       dispatch(ShowLoading())
-      const res = await axios.get("http://localhost:3000/api/portfolio/get-portfolio-data");
+      const res = await axios.get("https://capstone-0wh7.onrender.com/api/portfolio/get-portfolio-data");
       dispatch(SetPortfolioData(res.data))
       dispatch(ReloadData(false))
       dispatch(HideLoading())
