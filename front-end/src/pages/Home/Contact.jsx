@@ -25,10 +25,10 @@ function Contact() {
                     ))}</div>
                 <div style={{ height: "300", width: "300px" }}>
 
-                    <dotlottie-player src="https://lottie.host/020c8b7e-aa91-4768-8d8e-0673109afd86/fiDY4NCsY2.json"
-                     background="transparent"
-                      speed="1"
-                       loop autoplay></dotlottie-player></div>
+<dotlottie-player src="https://lottie.host/74fed069-90cc-459f-81a8-1ec4bdd2800b/jTgMJ7u2qp.json"
+                        background="transparent" speed="1"
+                        loop autoplay></dotlottie-player>
+                        </div>
             </div>
 
         </div>
