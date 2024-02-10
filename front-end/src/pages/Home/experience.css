@@ -1,0 +1,24 @@
+@media (max-width: 598px) { 
+    /* body{
+      padding: 2px;
+    } */
+    
+      .year{
+        padding: 10px;
+        color: black;  
+        display: flex;
+        flex-direction: row;
+      
+    }
+    .title{
+      display:flex;
+      flex-direction: row;
+    }
+       
+       h1{
+        padding: 2px;
+       }
+       p{
+        font-size: 15px;
+       }
+    }

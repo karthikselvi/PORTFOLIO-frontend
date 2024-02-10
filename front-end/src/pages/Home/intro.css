@@ -1,0 +1,11 @@
+@media (max-width: 598px) { 
+div{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+}
+p{
+    font-size: px;
+    word-wrap: normal;
+}
+}
