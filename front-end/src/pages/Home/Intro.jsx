@@ -35,7 +35,7 @@ function Intro() {
         }}>
         Login
       </button>
-      {isShown ? <Login/> : null}
+      {isShown ? null :<Login/>}
     </div>
     </div>
   )
