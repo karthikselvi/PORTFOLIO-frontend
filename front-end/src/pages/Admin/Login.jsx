@@ -1,12 +1,13 @@
 import { message } from 'antd';
 import axios from 'axios'
-import React from 'react'
+import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
 import { HideLoading, ShowLoading } from '../../redux/rootSlice';
 import Admin from '.';
 
 function Login() {
     const dispatch = useDispatch();
+    const [admin,setAdmin]=useState(true)
     const [user, setUser] = React.useState({
         username: "",
         password: ""
@@ -19,8 +20,10 @@ function Login() {
             dispatch(HideLoading())
             if (response.data.success) {
              message.success(response.data.message)
-            sessionStorage.setItem("token", response.data);
-            window.location.href = 'https://capstone-0wh7.onrender.com/api/portfolio/admin';
+setAdmin(!admin);
+            // sessionStorage.setItem("token", response.data);
+            // window.location.href ="/admin";
+
             }
             else {
                 message.error(response.data.message)
@@ -42,6 +45,7 @@ function Login() {
                     onChange={(e) => setUser({ ...user, password: e.target.value })} />
                 <button className='ms-5 '
                     onClick={login}>Login</button>
+                    {admin ? null:<Admin/>}
             </div>
         </div>
     )
