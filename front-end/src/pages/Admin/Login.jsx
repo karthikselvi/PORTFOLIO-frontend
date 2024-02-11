@@ -20,7 +20,7 @@ function Login() {
             if (response.data.success) {
              message.success(response.data.message)
             sessionStorage.setItem("token", response.data);
-            window.location.href = '/admin';
+            window.location.href = 'https://capstone-0wh7.onrender.com/api/portfolio/admin';
             }
             else {
                 message.error(response.data.message)
