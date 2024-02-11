@@ -10,7 +10,7 @@ function Course() {
     
   
     return (
-        <div >
+        <div className='ps-5'>
             <SectionTitle title="Education" />
             <div className="year d-flex gap-5 pb-5 pt-5" >
                 <div className=' d-flex flex-column gap-5 '>

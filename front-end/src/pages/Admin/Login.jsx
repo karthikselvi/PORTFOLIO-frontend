@@ -30,7 +30,7 @@ function Login() {
         }
     }
     return (
-        <div className='d-flex  justify-content-center  align-items-center mt-5 '>
+        <div className='d-flex  justify-content-center  align-items-center mt-5 width-auto'>
             <div className='d-flex gap-5 flex-column justify-content-center shadow border border-secondary p-4'>
                 <h1>Admin Login</h1>
                 <input type="text" placeholder="Username"

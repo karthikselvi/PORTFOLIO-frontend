@@ -10,7 +10,7 @@ function Contact() {
   
   
     return (
-        <div>
+        <div className='ps-5'>
             <SectionTitle title="Get in touch" />
             <div className='d-flex flex-row justify-content-between pt-3 pb-3'>
 

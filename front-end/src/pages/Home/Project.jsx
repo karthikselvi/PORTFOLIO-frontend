@@ -9,7 +9,7 @@ function Project() {
     const { Project } = portfolioData;
   
       return (
-        <div className='pt-3 pb-2'>
+        <div className='pt-3 pb-2 ps-5'>
             <SectionTitle title="Projects" />
             <div className="year d-flex gap-5 " style={{ paddingTop: '40px', paddingBottom: "70px", }}>
                 <div className=' d-flex flex-column gap-5 '>

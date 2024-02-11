@@ -10,7 +10,7 @@ function About() {
   const { lottieUrl, description1, description2, skills } = About;
 
   return (
-    <div className='pt-3'>
+    <div className='pt-3 ps-5'>
       <SectionTitle title="About me" /><br />
       <div className="d-flex gap-5  ">
         <div style={{ height: "350", width: "400px" }}>
@@ -20,7 +20,7 @@ function About() {
             loop autoplay>
           </dotlottie-player>
         </div>
-        <div className='d-flex flex-column  justify-content-center gap-5' style={{ width: '400px' }}>
+        <div className='d-flex  fs-5 flex-column  justify-content-center gap-5' style={{ width: '500px' }}>
           <p>{description1||""} </p>
           <p>
             {description2||""}
