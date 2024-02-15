@@ -22,12 +22,12 @@ function Intro() {
 
      </div>
 </div>
-<div style={{height:"300px",weight:"300px"}}>
+{/* <div style={{height:"300px",weight:"300px"}}>
 
     <dotlottie-player src="https://lottie.host/7db0f0ce-8c14-49dc-a070-32ce6be59dd1/g03Q5o4vlF.json"
      background="transparent" speed="1" 
      loop autoplay></dotlottie-player>
-    </div>
+    </div> */}
     {/* <div>
     <button onClick={() => {
          // console.log("The value of isShown:", isShown);

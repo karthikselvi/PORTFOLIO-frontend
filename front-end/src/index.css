@@ -6,7 +6,7 @@
 }
 
 button {
-  width: 100px;
+ /* width: 100px; */
   border-radius: 20px;
 }
 
@@ -33,7 +33,9 @@ button {
     margin-right: 10px;
 
   }
-  
+  *{
+    font-size: small;
+  }
 }
 
 i {
