@@ -43,6 +43,7 @@ function Home() {
         <Experience />
         <Project />
         <Course />
+        
         <Contact />
         <div className='d-flex justify-content-center mt-3 me-2'>
           <button className='btn btn-secondary' onClick={downloadPDF}>Download PDF
