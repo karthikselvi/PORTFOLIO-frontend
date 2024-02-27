@@ -19,12 +19,12 @@ function Project() {
                         onClick={() => {
                             setSelectedItemIndex(index);
                         }} className='cursor-pointer'>
-                            <h1 className={`fs-5 ${selectedItemIndex === index ? 'text-success border-start border-success p-2 border-3 '
+                            <h1 className= {`fs-5 cursor-pointer ${selectedItemIndex === index ? 'text-success border-start border-success p-2 border-3 '
                                 : 'text-light'}`}>{Project.title}</h1>
                         </div>
                     ))}
                 </div>
-                <div className='d-flex flex-row gap-5 justify-content-between align-items-center'>
+                <div className='d-flex flex-row gap-5 justify-content-between align-items-center border shadow-lg border-black p-3'>
                     <img src={Project[selectedItemIndex].image} alt=""className='h-50 w-30' />
                     <div className='d-flex flex-column gap-5'>
                         <h1 className="text-warning fs-5">{Project[selectedItemIndex].title}</h1>

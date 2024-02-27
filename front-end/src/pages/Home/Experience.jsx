@@ -23,7 +23,7 @@ function Experience() {
                         </div>
                     ))}
                 </div>
-                <div className='d-flex flex-column gap-5'>
+                <div className='d-flex flex-column gap-5 border shadow-lg border-black p-3'>
                     <h1 className="text-warning fs-4">{Experience[selectedItemIndex].title}</h1>
                     <h1 className="text-light fs-4">{Experience[selectedItemIndex].company}</h1>
                     <p className='text-light fs-5'>{Experience[selectedItemIndex].description}</p>

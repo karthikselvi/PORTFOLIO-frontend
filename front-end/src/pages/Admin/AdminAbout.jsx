@@ -30,7 +30,7 @@ function AdminAbout() {
   };
 
   return (
-    <div className="main">
+    <div className="">
       <Form
         onFinish={onFinish}
         layout="vertical"
@@ -39,9 +39,9 @@ function AdminAbout() {
           skills: portfolioData.About.skills.join(" , "),
         }}
       >
-        <Form.Item name="lottieURL" label="Lottie URL">
+        {/* <Form.Item name="lottieURL" label="Lottie URL">
           <input placeholder="Lottie URL" />
-        </Form.Item>
+        </Form.Item> */}
 
         <Form.Item name="description1" label="Description1">
           <textarea placeholder="Description1" />

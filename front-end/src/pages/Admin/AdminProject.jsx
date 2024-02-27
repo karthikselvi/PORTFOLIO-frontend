@@ -54,7 +54,7 @@ function AdminProjects() {
             if (response.data.success) {
                 message.success(response.data.message);
                 dispatch(HideLoading());
-                dispatch(ReloadData());
+                dispatch(ReloadData(true));
             } else {
                 message.error(response.data.message);
             }
@@ -81,12 +81,12 @@ function AdminProjects() {
                 {Project.map((Project,) => (
                     <div className='shadow-lg border border-secondary  p-5 '>
                         <h1 className='fs-3 text-warning'> {Project.title}</h1><hr /><br />
-                        <img src={Project.image} alt="" className='height-60 width-60'/><br /><br />
+                        <img src={Project.image} alt="" className='height-40 width-40'/><br /><br />
                         <a href={Project.link} target='_blank'>Link: {Project.link}</a><br /><br />
                         
                         {/* <h1 className='fs-6'> Company: {Project.description}</h1><br /> */}
                         <h1 className='fs-6 text-light'>{Project.description}</h1><br />
-                        <div className="d-flex justify-content-end gap-3 mt-4">
+                        <div className="d-flex justify-content-end gap-2 mt-4">
                             {/* <button className='bg-success' onClick={() => {
                                 setSelectedItemForEdit(Project);
                                 setShowAddEditModal(true);

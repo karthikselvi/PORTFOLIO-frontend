@@ -37,20 +37,20 @@ function Download() {
 
 
     return (
-        <div className='main' >
+        <div className='' >
             <div className='d-flex justify-content-center  me-2'>
                 <button className='btn btn-secondary' onClick={downloadPDF}>Download PDF
                 </button>
             </div><br />
-            <div className='border border-danger bg-dark'ref={pdfRef}>
-                <div className='pt-3 d-flex flex-row justify-content-between gap-4 bg-dark border border-danger border-bottom-0 '>
+            <div className='border border-danger 'ref={pdfRef}>
+                <div className='pt-3 d-flex flex-row justify-content-between gap-4 border border-danger border-bottom-0 '>
                     <div className=' d-flex flex-column align-item-center gap-4 ps-5'>
-                        <h1 className='fs-2  text-light fw-semibold'>{firstName || ""} {lastName || ""}</h1>
-                        <h3 className='fs-4 text-light'>{caption || ""}</h3>
-                        <p className='fs-6 text-light'>{description || ""}</p>
+                        <h1 className='fs-2  text-light fw-semibold '>{firstName || ""} {lastName || ""}</h1>
+                        <h3 className='fs-4 text-light '>{caption || ""}</h3>
+                        <p className='fs-6 text-light '>{description || ""}</p>
                     </div>
                 </div>
-                <div className='pt-2 ps-5 bg-dark border border-danger border-bottom-0 border-top-0'>
+                <div className='pt-2 ps-5  border border-danger border-bottom-0 border-top-0'>
                     {/* <SectionTitle title="About me" /><br /> */}
                     <div style={{ paddingTop: "40px", paddingBottom: "50px" }}>
                         <h1 className='fs-5 text-success'>Here are the few technologies I'have been working  with recently:</h1>
@@ -68,7 +68,7 @@ function Download() {
 
                 </div>
 <div className='d-flex'>
-<div className='ps-5 bg-dark border border-danger border-bottom-0 border-top-0'>
+<div className='ps-5  border border-danger border-bottom-0 border-top-0'>
                     <SectionTitle title="Education" />
                     <div className="year d-flex gap-5 pb-3 pt-3" >
                         <div className=' d-flex flex-column '>
@@ -100,7 +100,7 @@ function Download() {
                     </div>
 
                 </div>
-                <div className='ps-5 bg-dark '>
+                <div className='ps-5  '>
                     <SectionTitle title="Experience" /><br />
                     <div className="year d-flex gap-3 pb-4 pt-3">
                         <div className=' title d-flex flex-column gap-3 '>
@@ -122,7 +122,7 @@ function Download() {
                     </div>
                 </div>
 </div>
-                <div className='pt-3 pb-2 ps-5 bg-dark border border-danger border-bottom-0 border-top-0'>
+                <div className='pt-3 pb-2 ps-5  border border-danger border-bottom-0 border-top-0'>
                     <SectionTitle title="Projects" />
                     <div className="year d-flex gap-5 " >
                         <div className=' d-flex flex-column  '>
@@ -144,7 +144,7 @@ function Download() {
                     </div>
 
                 </div>
-                <div className='ps-5 bg-dark border border-danger border-top-0'>
+                <div className='ps-5  border border-danger border-top-0'>
                     <SectionTitle title="Get in touch" />
                     <div className='d-flex flex-row justify-content-between '>
 

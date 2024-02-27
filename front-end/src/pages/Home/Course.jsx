@@ -26,7 +26,7 @@ function Course() {
                     ))}
                 </div>
                 <div className='d-flex flex-row gap-5  align-items-center'>
-                    <div className='d-flex flex-column gap-5'>
+                    <div className='d-flex flex-column gap-5 border shadow border-black p-3'>
                         <h1 className="text-warning fs-5">{Course[selectedItemIndex].title}</h1>
                         <h1 className="text-light fs-5">{Course[selectedItemIndex].institution}</h1>
                         <h1 className="text-light fs-5">{Course[selectedItemIndex].duration}</h1>

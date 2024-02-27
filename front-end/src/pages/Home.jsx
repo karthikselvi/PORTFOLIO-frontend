@@ -13,6 +13,7 @@ import Download from './Home/Download'
 import { Tabs } from 'antd';
 import TabPane from 'antd/es/tabs/TabPane';
 import Login from './Admin/Login'
+import Admin from './Admin'
 
 
 function Home() {
@@ -61,6 +62,7 @@ function Home() {
     
           <div className='main'>
           <Header/>
+          
           {portfolioData &&
           <div className='mt-2 p-5 ps-0 text-light'> 
               <Tabs defaultActiveKey='1' tabPosition='left' size='large' >
@@ -85,9 +87,9 @@ function Home() {
                   <TabPane tab="Download" key="7">
                      <Download/>
                   </TabPane>
-                  <TabPane tab="Login" key="8">
-                     <Login/>
-                  </TabPane> 
+                  <TabPane tab="Manage" key="8">
+                     <Admin/>
+                  </TabPane>                   
 
                   </Tabs>
                   <Footer/>
