@@ -65,7 +65,7 @@ function AdminExperiences() {
 
   return (
     <div>
-      <div className="d-flex justify-content-end pb-5">
+      <div className="d-flex justify-content-end pb-5 ">
         <button
           className="buttton bg-success"
           onClick={() => {
@@ -83,10 +83,10 @@ function AdminExperiences() {
               {Course.title}
             </h1>
             <hr />
-            <h1 className=" fs-6">Company : {Course.title}</h1>
-            <h1 className=" fs-6">Role : {Course.institute}</h1>
-            <h1 className=" fs-6">Role : {Course.duration}</h1>
-            <h1 className=" fs-6">{Course.percentage}</h1>
+            <h1 className=" fs-6 text-light">Company : {Course.title}</h1>
+            <h1 className=" fs-6 text-light">Role : {Course.institute}</h1>
+            <h1 className=" fs-6 text-light">Role : {Course.duration}</h1>
+            <h1 className=" fs-6 text-light">{Course.percentage}</h1>
             <div className="d-flex justify-content-end gap-5 mt-5">
               <button
                 className="bg-danger  "

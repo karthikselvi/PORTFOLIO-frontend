@@ -2,7 +2,7 @@ import React from 'react'
 
 function LestSider() {
     return (
-        <div className='position-fixed bottom-0 start-0 ps-3'>
+        <div className='position-fixed bottom-0 end-0  ps-3'>
             <div className=' i d-flex flex-column align-items-center gap-2 '>
                 <div className="d-flex flex-column gap-4">
                     <a href="https://www.facebook.com/" target="_blank" >{" "}

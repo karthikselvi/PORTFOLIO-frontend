@@ -10,7 +10,7 @@ function Contact() {
   
   
     return (
-        <div className='ps-5'>
+        <div className='ps-5  pt-2'>
             <SectionTitle title="Get in touch" />
             <div className='d-flex flex-row justify-content-between pt-3 pb-3'>
 
@@ -23,7 +23,7 @@ function Contact() {
                             <span className='text-success fs-6'>{Contact[key]}</span>
                         </h1>)
                     ))}</div>
-                <div style={{ height: "300", width: "300px" }}>
+                <div style={{ height: "400px", width: "400px" }} className='me-5'>
 
 <dotlottie-player src="https://lottie.host/74fed069-90cc-459f-81a8-1ec4bdd2800b/jTgMJ7u2qp.json"
                         background="transparent" speed="1"

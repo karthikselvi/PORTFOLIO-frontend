@@ -10,7 +10,7 @@ function About() {
   const { lottieUrl, description1, description2, skills } = About;
 
   return (
-    <div className='pt-3 ps-5'>
+    <div className='  ps-5 '>
       <SectionTitle title="About me" /><br />
       <div className="d-flex gap-5  ">
         <div style={{ height: "350", width: "400px" }}>
@@ -21,14 +21,14 @@ function About() {
           </dotlottie-player>
         </div>
         <div className='d-flex  fs-5 flex-column  justify-content-center gap-5' style={{ width: '500px' }}>
-          <p>{description1||""} </p>
-          <p>
+          <p className='text-light'>{description1||""} </p>
+          <p className='text-light'>
             {description2||""}
           </p>
         </div>
 
       </div>
-      <div style={{ paddingTop: "40px", paddingBottom: "50px" }}>
+      <div style={{ paddingTop: "40px"}}>
         <h1 className='fs-5 text-success'>Here are the few technologies I'have been working  with recently:</h1>
         <div className='d-flex flex-wrap gap-4 mt-5 '>
           {skills.map((skill, index) =>

@@ -10,24 +10,24 @@ function Intro() {
   const [isShown, setIsShown] = useState(true);
 
   return (
-    <div className='d-flex flex-row justify-content-between gap-4'>
+    <div className='d-flex flex-row justify-content-between gap-4  pt-5'>
     <div className=' d-flex flex-column align-item-center gap-4 ps-5'
      style={{}}>
-     <h3 className='fs-5'>{welcomeText||""}</h3> 
+     <h3 className='fs-5 text-light'>{welcomeText||""}</h3> 
      <h1 className='fs-1 text-warning fw-semibold'>{firstName||""} {lastName||""}</h1>
-     <h3 className='fs-2 '>{caption||""}</h3> 
-     <p className='fs-5'>{description||""}</p>
+     <h3 className='fs-2 text-light'>{caption||""}</h3> 
+     <p className='fs-5 text-light'>{description||""}</p>
      <div>
      <button type="button" className="btn btn-outline-success btn-sm width-10">Get started</button>
 
      </div>
 </div>
-{/* <div style={{height:"300px",weight:"300px"}}>
+<div style={{height:"400px",weight:"400px"}}>
 
-    <dotlottie-player src="https://lottie.host/7db0f0ce-8c14-49dc-a070-32ce6be59dd1/g03Q5o4vlF.json"
+    <dotlottie-player src="https://lottie.host/0e67a932-0ddc-4320-8e6b-2a212c45ae3f/yhSrhlJ5iT.json"
      background="transparent" speed="1" 
-     loop autoplay></dotlottie-player>
-    </div> */}
+      loop autoplay></dotlottie-player>
+    </div>
     {/* <div>
     <button onClick={() => {
          // console.log("The value of isShown:", isShown);

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import Header from '../components/Header'
 import Intro from './Home/Intro'
 import About from './Home/About'
@@ -9,54 +9,94 @@ import Contact from './Home/Contact'
 import Footer from './Home/Footer'
 import LestSider from './Home/LestSider'
 import { useSelector } from 'react-redux'
-import html2canvas from 'html2canvas';
-import jsPDF from 'jspdf';
+import Download from './Home/Download'
+import { Tabs } from 'antd';
+import TabPane from 'antd/es/tabs/TabPane';
+import Login from './Admin/Login'
+
 
 function Home() {
   const { loading, portfolioData } = useSelector((state) => state.root);
+  const [isShown, setIsShown] = useState(true);
+
   const pdfRef=useRef();
-  const downloadPDF=()=>{
-    const input =pdfRef.current;
-    html2canvas(input).then((canvas)=>{
-      const imgdata=canvas.toDataURL('image/png');
-      const pdf=new jsPDF('p','mm','a4',true);
-      const pdfWidth=pdf.internal.pageSize.getWidth();
-      const pdfHeight=pdf.internal.pageSize.getHeight();
-      const imgWidth=canvas.width;
-      const imgHeight=canvas.height
-      const ratio =Math.min(pdfWidth / imgWidth,pdfHeight/imgHeight);
-      const imgX =(pdfWidth-imgWidth*ratio)/2;
-      const imgY=30;
-      pdf.addImage(imgdata,'PNG',imgX,imgY,imgWidth*ratio,imgHeight*ratio);
-      pdf.save('portfolio.pdf');
-    });
-  };
 
   return (
-    <div ref={pdfRef}>
-      <Header />
+    // <div  className='main'>
+    //   <Header />
 
-      {portfolioData && (<div 
-      style={{ paddingLeft: "100px", paddingRight: "100px", paddingTop: "10px", paddingBottom: "10px" }}>
-        <Intro />
-        <About />
-        <Experience />
-        <Project />
-        <Course />
+    //   {portfolioData && (<div 
+    //   style={{ paddingLeft: "100px", paddingRight: "100px", paddingTop: "10px", paddingBottom: "10px" }}>
+    //     <Intro />
+    //     {/* <About /> */}
+    //     <Experience />
+    //     <Project />
+    //     <Course />
         
-        <Contact />
-        <div className='d-flex justify-content-center mt-3 me-2'>
-          <button className='btn btn-secondary' onClick={downloadPDF}>Download PDF
-          </button>
-        </div>
+    //     <Contact />
+    //     <div className='d-flex justify-content-center mt-3 me-2'>
+    //       <button className='btn btn-secondary' onClick={downloadPDF}>Download PDF
+    //       </button>
+    //     </div>
+    //     <Footer />
+    //     <LestSider />
+    //     {/* <div>
+    //     <button onClick={() => {
+    //      // console.log("The value of isShown:", isShown);
+    //       setIsShown(!isShown);
+    //     }} className='bg-primary'>
+    //     DOWNLOADPDF
+    //   </button>
+    //   {isShown ? null :<Download/>}
+    // </div>  */}
+    
+    // <div ref={pdfRef}>
+    // <Download/>
+    // </div>
+    //   </div>
+    //   )}
+      
 
-        <Footer />
-        
-        <LestSider />
+    //   </div>
+    
+          <div className='main'>
+          <Header/>
+          {portfolioData &&
+          <div className='mt-2 p-5 ps-0 text-light'> 
+              <Tabs defaultActiveKey='1' tabPosition='left' size='large' >
+                  <TabPane tab="Intro" key="1" className='text-light'>
+                      <Intro/>
+                  </TabPane>
+                  <TabPane tab="About" key="2">
+                     <About/>
+                  </TabPane>
+                  <TabPane tab="Experience" key="3">
+                     <Experience/>
+                  </TabPane>
+                  <TabPane tab="Project" key="4">
+                     <Project/>
+                  </TabPane>
+                   <TabPane tab="Education" key="5">
+                     <Course/>
+                  </TabPane> 
+                  <TabPane tab="Contact" key="6">
+                     <Contact/>
+                  </TabPane> 
+                  <TabPane tab="Download" key="7">
+                     <Download/>
+                  </TabPane>
+                  <TabPane tab="Login" key="8">
+                     <Login/>
+                  </TabPane> 
+
+                  </Tabs>
+                  <Footer/>
+                  <LestSider/>
+          </div>}
       </div>
-      )}
-    </div>
+  
   )
+
 }
 
 export default Home

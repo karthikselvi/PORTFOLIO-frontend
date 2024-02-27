@@ -67,7 +67,7 @@ function AdminExperiences() {
     <div>
       <div className="d-flex justify-content-end pb-5">
         <button
-          className="buttton bg-success"
+          className="buttton bg-success text-light"
           onClick={() => {
             setSelectedItemForEdit(null);
             setShowAddEditModal(true);
@@ -83,12 +83,12 @@ function AdminExperiences() {
               {Experience.period}
             </h1>
             <hr />
-            <h1 className=" fs-6">Company : {Experience.company}</h1>
-            <h1 className=" fs-6">Role : {Experience.title}</h1>
-            <h1 className=" fs-6">{Experience.description}</h1>
+            <h1 className=" fs-6 text-light">Company : {Experience.company}</h1>
+            <h1 className=" fs-6 text-light">Role : {Experience.title}</h1>
+            <h1 className=" fs-6 text-light">{Experience.description}</h1>
             <div className="d-flex justify-content-end gap-5 mt-5">
               <button
-                className="bg-danger  "
+                className="bg-danger text-light "
                 onClick={() => {
                   onDelete(Experience);
                 }}
@@ -138,7 +138,7 @@ function AdminExperiences() {
               <input placeholder="Description" />
             </Form.Item>
 
-            <div className="d-flex justify-content-end">
+            <div className="d-flex justify-content-end gap-2">
               <button
                 className=" border border-primary text-primary"
                 onClick={() => {
@@ -148,7 +148,7 @@ function AdminExperiences() {
               >
                 Cancel
               </button>
-              <button className="bg-success">
+              <button className="bg-success text-light">
                 {selectedItemForEdit ? "Update" : "Add"}
               </button>
             </div>

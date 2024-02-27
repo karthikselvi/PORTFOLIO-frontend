@@ -1,4 +1,6 @@
-import { message } from 'antd';
+import { Tabs, message } from 'antd';
+import TabPane from 'antd/es/tabs/TabPane';
+
 import axios from 'axios'
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
@@ -7,7 +9,7 @@ import Admin from '.';
 
 function Login() {
     const dispatch = useDispatch();
-    const [admin,setAdmin]=useState(true)
+    // const [admin,setAdmin]=useState(true)
     const [user, setUser] = React.useState({
         username: "",
         password: ""
@@ -18,15 +20,16 @@ function Login() {
             dispatch(ShowLoading());
             const response = await axios.post("https://capstone-0wh7.onrender.com/api/portfolio/admin-login", user);
             dispatch(HideLoading())
-            if (response.data.success) {
-             message.success(response.data.message)
-setAdmin(!admin);
-            // sessionStorage.setItem("token", response.data);
-            // window.location.href ="/admin";
+            
+             if (response.data.success) {
+         message.success(response.data.message)
+            //  setAdmin(!admin);
+            sessionStorage.setItem("token", response.data);
+            window.location.href ="/admin";
 
-            }
-            else {
-                message.error(response.data.message)
+         }
+             else {
+             message.error(response.data.message)
             }
         } catch (error) {
             message.error(error.message);
@@ -43,10 +46,13 @@ setAdmin(!admin);
                 <input type="text" placeholder="Password"
                     value={user.password}
                     onChange={(e) => setUser({ ...user, password: e.target.value })} />
-                <button className='ms-5 '
+                <button className='ms-5 me-5 btn btn-secondary'
                     onClick={login}>Login</button>
-                    {admin ? null:<Admin/>}
+                    
             </div>
+            {/* <div>
+            {admin ?  <Admin/>:null}
+            </div> */}
         </div>
     )
 }

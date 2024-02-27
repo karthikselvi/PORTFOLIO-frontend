@@ -30,7 +30,7 @@ function AdminAbout() {
   };
 
   return (
-    <div>
+    <div className="main">
       <Form
         onFinish={onFinish}
         layout="vertical"

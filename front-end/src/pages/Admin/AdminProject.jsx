@@ -67,7 +67,7 @@ function AdminProjects() {
     return (
         <div className=''>
             <div className="d-flex justify-content-end pb-5">
-                <button className="button bg-success"
+                <button className="button bg-success text-light"
                     onClick={() => {
                         setSelectedItemForEdit(false);
                         setShowAddEditModal(true);
@@ -85,14 +85,14 @@ function AdminProjects() {
                         <a href={Project.link} target='_blank'>Link: {Project.link}</a><br /><br />
                         
                         {/* <h1 className='fs-6'> Company: {Project.description}</h1><br /> */}
-                        <h1 className='fs-6'>{Project.description}</h1><br />
+                        <h1 className='fs-6 text-light'>{Project.description}</h1><br />
                         <div className="d-flex justify-content-end gap-3 mt-4">
                             {/* <button className='bg-success' onClick={() => {
                                 setSelectedItemForEdit(Project);
                                 setShowAddEditModal(true);
                                 setType("edit")
                             }}>Edit</button> */}
-                            <button className='bg-danger' onClick={() => {
+                            <button className='bg-danger text-light' onClick={() => {
                                 onDelete(Project)
                             }}>
                                 Delete</button>
@@ -136,7 +136,7 @@ function AdminProjects() {
                         <button className='border border-primary text-primary' onClick={() => {
                             setShowAddEditModal(false)
                         }}>Cancel</button>
-                        <button className='bg-success '>
+                        <button className='bg-success text-light'>
                             {selectedItemForEdit ? "Update" : " Add"}
                         </button>
                     </div>

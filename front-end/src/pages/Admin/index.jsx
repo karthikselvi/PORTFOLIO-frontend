@@ -15,7 +15,7 @@ function Admin() {
     const {portfolioData } = useSelector((state) => state.root);
 
   return (
-    <div>
+    <div className='main '>
         <Header/>
         <h1 className='text-warning ms-5 mt-5 fs-2 text-center'>Portfolio Admin</h1>
         {portfolioData &&
