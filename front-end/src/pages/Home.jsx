@@ -64,7 +64,7 @@ function Home() {
           <Header/>
           
           {portfolioData &&
-          <div className='mt-2 p-5 ps-0 text-light'> 
+          <div className='mt-2 p-5 ps-0 text-light vh-75' > 
               <Tabs defaultActiveKey='1' tabPosition='left' size='large' >
                   <TabPane tab="Intro" key="1" className='text-light'>
                       <Intro/>
@@ -87,9 +87,7 @@ function Home() {
                   <TabPane tab="Download" key="7">
                      <Download/>
                   </TabPane>
-                  <TabPane tab="Manage" key="8">
-                     <Admin/>
-                  </TabPane>                   
+                                    
 
                   </Tabs>
                   <Footer/>

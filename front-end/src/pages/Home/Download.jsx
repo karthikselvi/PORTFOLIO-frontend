@@ -43,14 +43,14 @@ function Download() {
                 </button>
             </div><br />
             <div className='border border-danger 'ref={pdfRef}>
-                <div className='pt-3 d-flex flex-row justify-content-between gap-4 border border-danger border-bottom-0 '>
+                <div className='pt-3 d-flex flex-row justify-content-between gap-3 border border-danger border-bottom-0 '>
                     <div className=' d-flex flex-column align-item-center gap-4 ps-5'>
                         <h1 className='fs-2  text-light fw-semibold '>{firstName || ""} {lastName || ""}</h1>
                         <h3 className='fs-4 text-light '>{caption || ""}</h3>
                         <p className='fs-6 text-light '>{description || ""}</p>
                     </div>
                 </div>
-                <div className='pt-2 ps-5  border border-danger border-bottom-0 border-top-0'>
+                <div className='pt-1 ps-5  border border-danger border-bottom-0 border-top-0'>
                     {/* <SectionTitle title="About me" /><br /> */}
                     <div style={{ paddingTop: "40px", paddingBottom: "50px" }}>
                         <h1 className='fs-5 text-success'>Here are the few technologies I'have been working  with recently:</h1>
