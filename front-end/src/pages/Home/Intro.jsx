@@ -28,15 +28,7 @@ function Intro() {
      background="transparent" speed="1" 
       loop autoplay></dotlottie-player>
     </div>
-    {/* <div>
-    <button onClick={() => {
-         // console.log("The value of isShown:", isShown);
-          setIsShown(!isShown);
-        }}>
-        Login
-      </button>
-      {isShown ? null :<Login/>}
-    </div> */}
+   
     </div>
   )
 }

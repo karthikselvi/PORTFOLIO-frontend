@@ -31,10 +31,7 @@ function Course() {
                         <h1 className="text-light fs-5">{Course[selectedItemIndex].institution}</h1>
                         <h1 className="text-light fs-5">{Course[selectedItemIndex].duration}</h1>
                         <h1 className="text-light fs-5">{Course[selectedItemIndex].Percentage}</h1>
-                        {/* <p className='text-light'>i have been working with 3 yrs.as i am a developer i learnt lot of things inthis company</p> */}
                     </div>
-                    {/* <img src={Course[selectedItemIndex].image} alt=""className='h-50 w-30' /> */}
-
                 </div>
             </div>
 

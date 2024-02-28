@@ -22,47 +22,9 @@ function Home() {
 
   const pdfRef=useRef();
 
-  return (
-    // <div  className='main'>
-    //   <Header />
-
-    //   {portfolioData && (<div 
-    //   style={{ paddingLeft: "100px", paddingRight: "100px", paddingTop: "10px", paddingBottom: "10px" }}>
-    //     <Intro />
-    //     {/* <About /> */}
-    //     <Experience />
-    //     <Project />
-    //     <Course />
-        
-    //     <Contact />
-    //     <div className='d-flex justify-content-center mt-3 me-2'>
-    //       <button className='btn btn-secondary' onClick={downloadPDF}>Download PDF
-    //       </button>
-    //     </div>
-    //     <Footer />
-    //     <LestSider />
-    //     {/* <div>
-    //     <button onClick={() => {
-    //      // console.log("The value of isShown:", isShown);
-    //       setIsShown(!isShown);
-    //     }} className='bg-primary'>
-    //     DOWNLOADPDF
-    //   </button>
-    //   {isShown ? null :<Download/>}
-    // </div>  */}
-    
-    // <div ref={pdfRef}>
-    // <Download/>
-    // </div>
-    //   </div>
-    //   )}
-      
-
-    //   </div>
-    
+  return (    
           <div className='main'>
           <Header/>
-          
           {portfolioData &&
           <div className='mt-2 p-5 ps-0 text-light ' > 
               <Tabs defaultActiveKey='1' tabPosition='left' size='large' >
