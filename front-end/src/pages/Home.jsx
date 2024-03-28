@@ -34,9 +34,9 @@ function Home() {
                   <TabPane tab="About" key="2">
                      <About/>
                   </TabPane>
-                  <TabPane tab="Experience" key="3">
+                  {/* <TabPane tab="Experience" key="3">
                      <Experience/>
-                  </TabPane>
+                  </TabPane> */}
                   <TabPane tab="Project" key="4">
                      <Project/>
                   </TabPane>
