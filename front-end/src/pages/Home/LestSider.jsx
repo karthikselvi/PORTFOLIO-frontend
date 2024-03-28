@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Manage from './Manage';
+// import Manage from './Manage';
 import Admin from '../Admin';
 
 function LestSider() {

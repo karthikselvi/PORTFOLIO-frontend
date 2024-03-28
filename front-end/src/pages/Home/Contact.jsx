@@ -35,4 +35,4 @@ function Contact() {
     )
 }
 
-export default Contactfr
+export default Contact
