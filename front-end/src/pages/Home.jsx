@@ -14,6 +14,7 @@ import { Tabs } from 'antd';
 import TabPane from 'antd/es/tabs/TabPane';
 import Login from './Admin/Login'
 import Admin from './Admin'
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
 
 
 function Home() {
@@ -24,34 +25,40 @@ function Home() {
 
   return (    
           <div className='main'>
-          <Header/>
+          {/* <Header/> */}
           {portfolioData &&
-          <div className='mt-2 p-5 ps-0 text-light ' > 
-              <Tabs defaultActiveKey='1' tabPosition='left' size='large' >
-                  <TabPane tab="Intro" key="1" className='text-light'>
+          <div className=' ms-2 p-4 ps-0 text-light ' > 
+              {/* <Tabs defaultActiveKey='1' tabPosition='left' size='large' > */}
+                  {/* <TabPane tab="Intro" key="1" className='text-light'> */}
+                     {/* <BrowserRouter> */}
+                     {/* <Routes>
+                        <Route exact path='/intro' element={<Intro/>}/>
+                     </Routes> */}
+                     {/* </BrowserRouter> */}
                       <Intro/>
-                  </TabPane>
-                  <TabPane tab="About" key="2">
+                  {/* </TabPane> */}
+                  {/* <TabPane tab="About" key="2"> */}
                      <About/>
-                  </TabPane>
+                  {/* </TabPane> */}
                   {/* <TabPane tab="Experience" key="3">
                      <Experience/>
                   </TabPane> */}
-                  <TabPane tab="Project" key="4">
-                     <Project/>
-                  </TabPane>
-                   <TabPane tab="Education" key="5">
+                  {/* <TabPane tab="Project" key="4"> */}
+                  {/* </TabPane> */}
+                   {/* <TabPane tab="Education" key="5"> */}
                      <Course/>
-                  </TabPane> 
-                  <TabPane tab="Contact" key="6">
+                     <Project/>
+
+                  {/* </TabPane>  */}
+                  {/* <TabPane tab="Contact" key="6"> */}
                      <Contact/>
-                  </TabPane> 
-                  <TabPane tab="Download" key="7">
-                     <Download/>
-                  </TabPane>                   
-                  </Tabs>
-                  <Footer/>
-                  <LestSider/>
+                  {/* </TabPane>  */}
+                  {/* <TabPane tab="Download" key="7"> */}
+                     {/* <Download/> */}
+                  {/* </TabPane>                   
+                  </Tabs> */}
+                  {/* <Footer/> */}
+                  {/* <LestSider/> */}
           </div>}
       </div>
   

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import SectionTitle from '../../components/SectionTitle'
 import './experience.css'
 import { useSelector } from 'react-redux';
+import Footer from './Footer';
 
 function Course() {
     const [selectedItemIndex, setSelectedItemIndex] = useState(0);
@@ -10,7 +11,7 @@ function Course() {
     
   
     return (
-        <div className='ps-5  pt-3'>
+        <div className='ps-5  pt-3 mt-5'>
             <SectionTitle title="Education" />
             <div className="year d-flex gap-5 pb-5 pt-5" >
                 <div className=' d-flex flex-column gap-4'>

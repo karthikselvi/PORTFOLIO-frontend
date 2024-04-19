@@ -2,6 +2,7 @@ import React from 'react'
 import SectionTitle from '../../components/SectionTitle'
 import './intro.css'
 import { useSelector } from 'react-redux';
+import Footer from './Footer';
 
 function About() {
 
@@ -40,6 +41,7 @@ function About() {
           ))}
         </div>
       </div>
+      {/* <Footer/> */}
 
     </div>
   )

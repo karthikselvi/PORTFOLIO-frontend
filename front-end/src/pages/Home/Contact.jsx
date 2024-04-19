@@ -1,6 +1,7 @@
 import React from 'react'
 import SectionTitle from '../../components/SectionTitle'
 import { useSelector } from 'react-redux';
+import Footer from './Footer';
 
 function Contact() { 
     
@@ -10,7 +11,7 @@ function Contact() {
   
   
     return (
-        <div className='ps-5  pt-2'>
+        <div className='ps-5 '>
             <SectionTitle title="Get in touch" />
             <div className='d-flex flex-row justify-content-between pt-3 pb-3 border shadow border-black p-3'>
 
@@ -30,6 +31,7 @@ function Contact() {
                         loop autoplay></dotlottie-player>
                         </div>
             </div>
+            {/* <Footer/> */}
 
         </div>
     )

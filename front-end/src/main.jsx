@@ -6,6 +6,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import store from './redux/store'
 import { Provider } from 'react-redux'
 import { StyleProvider } from '@ant-design/cssinjs';
+import { BrowserRouter } from 'react-router-dom'
 
 // Config `hashPriority` to `high` instead of default `low`
 // Which will remove `:where` wrapper

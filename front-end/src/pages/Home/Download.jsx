@@ -37,8 +37,8 @@ function Download() {
 
 
     return (
-        <div className='' >
-            <div className='d-flex justify-content-center  me-2'>
+        <div className='m-2' >
+            <div className='d-flex justify-content-center '>
                 <button className='btn btn-secondary' onClick={downloadPDF}>Download PDF
                 </button>
             </div><br />

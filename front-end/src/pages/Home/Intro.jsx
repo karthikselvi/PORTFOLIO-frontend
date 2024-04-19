@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './intro.css'
 import { useSelector } from 'react-redux';
 import Login from '../Admin/Login';
+import Footer from './Footer';
 
 function Intro() {
   const { loading,portfolioData } = useSelector((state) => state.root);
@@ -28,7 +29,7 @@ function Intro() {
      background="transparent" speed="1" 
       loop autoplay></dotlottie-player>
     </div>
-   
+
     </div>
   )
 }
