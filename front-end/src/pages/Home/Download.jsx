@@ -68,7 +68,7 @@ function Download() {
 
                 </div>
 <div className='d-flex'>
-<div className='ps-5  border border-danger border-bottom-0 border-top-0'>
+<div className='ps-5    border-bottom-0 border-top-0'>
                     <SectionTitle title="Education" />
                     <div className="year d-flex gap-5 pb-3 pt-3" >
                         <div className=' d-flex flex-column '>
@@ -90,37 +90,17 @@ function Download() {
                                 </div>
                             ))}
                         </div>
-                        <div className='d-flex flex-row gap-5  align-items-center'>
+                        {/* <div className='d-flex flex-row gap-5  align-items-center'>
                             <div className='d-flex flex-column gap-5'>
-                                {/* <p className='text-light'>i have been working with 3 yrs.as i am a developer i learnt lot of things inthis company</p> */}
+                                <p className='text-light'>i have been working with 3 yrs.as i am a developer i learnt lot of things inthis company</p>
                             </div>
-                            {/* <img src={Course[selectedItemIndex].image} alt=""className='h-50 w-30' /> */}
+                            <img src={Course[selectedItemIndex].image} alt=""className='h-50 w-30' />
 
-                        </div>
+                        </div> */}
                     </div>
 
                 </div>
-                <div className='ps-5  '>
-                    <SectionTitle title="Experience" /><br />
-                    <div className="year d-flex gap-3 pb-4 pt-3">
-                        <div className=' title d-flex flex-column gap-3 '>
-                            {Experience.map((Experience, index) => (
-                                <div key={index}>
-                                    <ul>
-                                        <li>
-                                            <h1 className='fs-6 text-light'>{Experience.period}</h1>
-                                            <h1 className=" fs-6 text-light">{Experience.title}</h1>
-                                            <h1 className="fs-6 text-light">{Experience.company}</h1>
-                                            {/* <p className=' fs-6'>{Experience.description}</p> */}
-
-                                        </li>
-                                    </ul>
-
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
+                
 </div>
                 <div className='pt-3 pb-2 ps-5  border border-danger border-bottom-0 border-top-0'>
                     <SectionTitle title="Projects" />
@@ -133,6 +113,7 @@ function Download() {
                                             <h1 className='fs-6 text-light'>{Project.title}</h1>
                                             {/* <img src={Project.image} alt="" className='h-50 w-30' /><br /> */}
                                             <a href={Project.link} target='_blank' className="text-success fs-6">View project</a>
+                                          <br /> <a href={Project.code} target='_blank' className='text-danger'>Code</a>
                                             <h1 className=" fs-6 text-light">{Project.description}</h1>
 
                                         </li>
