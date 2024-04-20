@@ -65,7 +65,7 @@ function Download() {
                         </div>
                     </div>
                 </div>
-                <div className='d-flex pt-5'>
+                <div className='d-flex pt-5 '>
                     <div className='ps-5   border-bottom-0 border-top-0'>
                         <SectionTitle title="Education" />
                         <div className="year d-flex gap-5 pb-2 pt-2" >
