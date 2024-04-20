@@ -11,7 +11,7 @@ function Intro() {
   const [isShown, setIsShown] = useState(true);
 
   return (
-    <div className='d-flex flex-row justify-content-between gap-5  pt-5'>
+    <div className='d-flex flex-row justify-content-between gap-5  pt-5 mt-5'>
     <div className=' d-flex flex-column align-item-center gap-4 ps-5'
      style={{}}>
      <h3 className='fs-5 text-light'>{welcomeText||""}</h3> 

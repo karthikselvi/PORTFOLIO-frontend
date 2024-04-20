@@ -1,0 +1,20 @@
+li:hover{
+    background-color: gray;
+    border-radius: 20px;
+
+}
+ul{
+    gap: 30px;
+    margin: 0;
+    background-color: transparent;
+}
+ul li{
+    background-color: transparent;
+}
+@media (min-width:1024) {
+    div{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

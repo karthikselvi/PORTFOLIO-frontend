@@ -14,55 +14,31 @@ import { Tabs } from 'antd';
 import TabPane from 'antd/es/tabs/TabPane';
 import Login from './Admin/Login'
 import Admin from './Admin'
-import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 
 function Home() {
-  const { loading, portfolioData } = useSelector((state) => state.root);
-  const [isShown, setIsShown] = useState(true);
+   const { loading, portfolioData } = useSelector((state) => state.root);
+   const [isShown, setIsShown] = useState(true);
 
-  const pdfRef=useRef();
+   const pdfRef = useRef();
 
-  return (    
-          <div className='main'>
-          {/* <Header/> */}
-          {portfolioData &&
-          <div className=' ms-2 p-4 ps-0 text-light ' > 
-              {/* <Tabs defaultActiveKey='1' tabPosition='left' size='large' > */}
-                  {/* <TabPane tab="Intro" key="1" className='text-light'> */}
-                     {/* <BrowserRouter> */}
-                     {/* <Routes>
-                        <Route exact path='/intro' element={<Intro/>}/>
-                     </Routes> */}
-                     {/* </BrowserRouter> */}
-                      <Intro/>
-                  {/* </TabPane> */}
-                  {/* <TabPane tab="About" key="2"> */}
-                     <About/>
-                  {/* </TabPane> */}
-                  {/* <TabPane tab="Experience" key="3">
-                     <Experience/>
-                  </TabPane> */}
-                  {/* <TabPane tab="Project" key="4"> */}
-                  {/* </TabPane> */}
-                   {/* <TabPane tab="Education" key="5"> */}
-                     <Course/>
-                     <Project/>
+   return (
+      <div className='main'>
+         {/* <Header/> */}
+         {portfolioData &&
+            <div className=' ms-2 p-4 ps-0 text-light ' >
 
-                  {/* </TabPane>  */}
-                  {/* <TabPane tab="Contact" key="6"> */}
-                     <Contact/>
-                  {/* </TabPane>  */}
-                  {/* <TabPane tab="Download" key="7"> */}
-                     {/* <Download/> */}
-                  {/* </TabPane>                   
-                  </Tabs> */}
-                  {/* <Footer/> */}
-                  {/* <LestSider/> */}
-          </div>}
+               <Intro />
+               <About />
+               <Course />
+               <Project />
+               <Contact />
+               <Footer />
+            </div>}
       </div>
-  
-  )
+
+   )
 
 }
 

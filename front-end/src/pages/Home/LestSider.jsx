@@ -6,7 +6,7 @@ function LestSider() {
     const[ismanage,setManage]=useState(false);
 
     return (
-        <div className='position-fixed top-0 end-0  ps-3 mt-1 ' style={{backgroundColor:"transparent"}}>
+        <div className='position-fixed top-0 end-0  ps-3 mt-1' style={{backgroundColor:"transparent"}}>
            {/* <div className=' i d-flex flex-row   justify-content-between gap-5  '> */}
                 {/* <div className=" position-fixed top-0 end-0  ps-3 mt-1 d-flex flex-row gap-5 justify-content-between"> */}
                     <a href="https://www.facebook.com/" target="_blank" className='link-underline-dark m-3'>{" "}

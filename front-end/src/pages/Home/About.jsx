@@ -11,7 +11,7 @@ function About() {
   const { lottieUrl, description1, description2, skills } = About;
 
   return (
-    <div className='  ps-5 '>
+    <div className=' pt-3 ps-5 mt-5'>
       <SectionTitle title="About me" /><br />
       <div className="d-flex gap-5  ">
         <div style={{ height: "300", width: "300px" }}>

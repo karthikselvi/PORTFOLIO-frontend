@@ -11,7 +11,7 @@ function Contact() {
   
   
     return (
-        <div className='ps-5 '>
+        <div className='ps-5 pt-2 mt-5 '>
             <SectionTitle title="Get in touch" />
             <div className='d-flex flex-row justify-content-between pt-3 pb-3 border shadow border-black p-3'>
 
